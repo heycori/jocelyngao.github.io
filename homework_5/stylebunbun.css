@@ -500,7 +500,7 @@ body {
 }
 
 .progressbar {
-	left: 240px;
+	left: 180px;
 	top: 60px;
 	position: absolute;
 }
@@ -616,7 +616,7 @@ body {
 	font-size: 22px;
 }
 
-.total {
+.shoppingtotal {
 	background-color: white;
 	height:395px;
 	top:140px;
@@ -627,7 +627,7 @@ body {
 	position: absolute;
 }
 
-#total {
+#shoppingtotal {
 	position: absolute;
 	left: 40px;
 	top: 20px;
