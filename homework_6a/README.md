@@ -1,1 +1,5 @@
-The basic requirements I fulfilled were: 1) creating a home page that navigates to the product browsing and product detail page; 2) creating the product browsing page; and 3) creating the product detail page for the blackberry cinnamon roll. For bonus points, I created an additional product detail page for the caramel pecan cinnamon bun and the original bun.
+The new features on my page can be experienced on the blackberry product details page:
+  Both dropdowns are interactable, and depending on what quantity the user chooses, the total cost at the bottom will update with the correct price.
+  Once a user hits the "add to cart button," the item counter by the shopping cart icon in the navigation bar will update and increase with every click.
+  
+The new shopping cart page is not yet reflective of what users add to their carts, but the general layout and presentation is complete.
