@@ -5,6 +5,7 @@
 		<!-- styles-->
 		<link rel="stylesheet" type="text/css" href="stylebunbun.css">
 		<meta charset="UTF-8">
+		<script src="myscripts.js"></script>
 	</head>
 	<body>
 		<div class= "pagecontainer">
@@ -13,18 +14,19 @@
 					<img src="images/bunbunlogo.png" alt="Home">
 				</a>
 				<a id="menu" href="./menu.html" style="text-decoration:none">MENU</a>
-				<a id="ourstory" href="#ourstory" style="text-decoration:none">OUR STORY</a>
-				<a id="contact" href="#contact" style="text-decoration:none">CONTACT</a>
-				<a id="signin" href="#signin" style="text-decoration:none">SIGN IN</a>
-				<a id="cart-one" href="./shoppingcart.html">
-					<img src="images/shoppingcart-one.png" alt="Cart-1">
+				<a id="ourstory" href="javascript:;" style="text-decoration:none">OUR STORY</a>
+				<a id="contact" href="javascript:;" style="text-decoration:none">CONTACT</a>
+				<a id="signin" href="javascript:;" style="text-decoration:none">SIGN IN</a>
+				<a id="cartempty" href="./shoppingcart.html">
+					<img src="images/shoppingcart-emptylogo.png" alt="Cart">
 				</a>
+				<input type="text" id="inc" value="0"></input>
 			</div>
 			<div class= "fullpage">
 				<div class="progressbar">
 					<img src="images/progressbar.png" alt="Progressbar">
 				</div>
-				<div class= "items">
+				<div class= "itemscart">
 					<div id='mycart'>
 						<p><b>MY CART</b></p>
 					</div>
@@ -83,3 +85,46 @@
 		</div>	
 	</body>	
 </html>
+
+<!--<th scope="col" id="bunname">Item</th>
+									<th scope="col" id="summaryglazing">Glazing</th>
+									<th scope="col" id="summaryquantity">Quantity</th>
+									<th scope="col" id="price">Price</th>
+
+
+														<form id="shopping-cart" action="shoppingcart.html" method="post">
+						<table class="shopping-cart">
+							<thead>
+								<tr>
+									<div class="product">
+										<div id="productimage">
+											
+										</div>
+										<div id="price">
+											
+										</div>
+										<div id="bunname">
+										
+										</div>
+										<div id="itemglazing">
+											
+										</div>
+										<div id="itemquantity">
+										
+										</div>
+									</div>
+
+								</tr>
+							</thead>
+							<tbody></tbody>
+						</table>
+						<p id="subtotal">
+							<b>SUBTOTAL: </b> <span id="stotal"></span>
+						</p>
+						<ul id="shopping-cart-actions">
+							<li style = "list-style-type: none;" >
+								<input type="submit" name="deleteitem" id="deleteitem" class="itemsubmit" value="X" />
+							</li>
+						</ul>
+					</form>
+				</div>-->

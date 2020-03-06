@@ -375,7 +375,7 @@ body {
 	border-radius: 5px;
 }
 
-#glazing {
+.glazing {
 	padding-left: 10px;
 	font-size: 12px;
 }
@@ -391,7 +391,7 @@ body {
 	border-radius: 5px;
 }
 
-#quantity {
+.quantity {
 	padding-left: 10px;
 	font-size: 12px;
 }
@@ -463,24 +463,46 @@ body {
 	font-size: 13px;
 }
 */
-.addtocart {
+
+#inc {
 	position: absolute;
-	background-color: #001B48;
+	top: 20px;
+	left: 1260px;
+	width: 15px;
+	height: 20px;
+	border: 0px;
+	border-radius: 10px;
+	background-color: #38537D;
+	color: white;
+	padding-left: 5px;
+}
+
+.addtocart button{
+	position: absolute;
 	width:170px;
 	height:40px;
 	left: 610px;
 	top: 370px;
 	border-radius: 10px;
 	text-align: center;
+}
+
+.addtocart button {
+	color: white;
+	font-size: 16px;
+}
+.addtocart button {
+	color:white;
+	font-size: 16px;
+	background-color: #001B48;
+	width:170px;
+	height:40px;
+	left: 610px;
+	border-radius: 10px;
+	text-align: center;
 	border: 1px solid #010205;
 	box-sizing: border-box;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.addtocart h2 {
-	color: white;
-	font-size: 16px;
-	margin-top:10px;
 }
 
 .total {
@@ -496,7 +518,7 @@ body {
 	top: 100px;
 	width: 100%;
 	background-color: rgba(120, 159, 223, 0.08);
-	height: 1250px;
+	min-height: 800px;
 }
 
 .progressbar {
@@ -509,12 +531,50 @@ body {
 	background-color: white;
 	position: absolute;
 	left: 85px;
+	top:20px;
+	border: 1px solid #717178;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	width: 1150px;
+	min-height: 430px;
+}
+
+.itemscart{
+	background-color: white;
+	position: absolute;
+	left: 85px;
 	top:140px;
 	border: 1px solid #717178;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-	width: 700px;
-	height: 430px;
+	width: 750px;
+	min-height: 430px;
 }
+
+#tabletitle {
+	position: absolute;
+	font-size: 30px;
+	color:#233654;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+
+#blackberrystuff{
+	position: absolute;
+	top: 200px;
+	left: 50px;
+}
+#firstitemname{
+	font-size: 20px;
+}
+
+.glazingdrop label{
+	font-size: 14px;
+}
+
+.quantitydrop label {
+	font-size: 14px;
+}
+
 
 #mycart {
 	font-size: 22px;
@@ -691,3 +751,70 @@ body {
 	padding-left: 40px;
 	margin-top: 15px;
 }
+
+/**empty shopping cart stuff**/
+#emptycartpage {
+	position:absolute;
+	background-color: white;
+	border: 1px solid #717178;
+	box-sizing: border-box;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	top: 50px;
+	left: 290px;
+	width: 800px;
+	height: 400px;
+	text-align: center;
+}
+
+#emptymessage {
+	font-size: 40px;
+	margin:0px;
+	margin-top: 45px;
+	display: inline-block;
+}
+
+#emptycartpage img{
+	position: absolute;
+	height: 100px;
+	width: 130px;
+	left: 330px;
+	top: 150px;
+}
+
+
+
+#keepshopping {
+	position: absolute;
+	background-color: #001B48;
+	border: 1px solid #001B48;
+	box-sizing: border-box;
+	border-radius: 3px;
+	height: 50px;
+	width: 400px;
+	bottom: 50px;
+	left: 200px;
+	text-align: center;
+	font-size: 20px;
+	color: white;
+	padding: 12px 0px;
+}
+
+#keepshopping p{
+	position: absolute;
+	font-size: 20px;
+	color: white;
+	left: 83px;
+	margin-top: 13px;
+}
+
+.shopping-cart {
+	position: absolute;
+	top: 130px;
+}
+
+#deleteitem {
+	position: absolute;
+	right: 60px;
+	top: 110px;
+}
+
