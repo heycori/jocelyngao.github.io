@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Bun Bun's Bake Shop Home</title>
+		<!-- styles-->
+		<link rel="stylesheet" type="text/css" href="stylebunbun.css">
+		<meta charset="UTF-8">
+		<script src="myscripts.js"></script>
+	</head>
+	<body>
+		<div class= "pagecontainer">
+			<div class="navbar">
+				<a class="active" id="homelogo" href="./indexbunbun.html">
+					<img src="images/bunbunlogo.png" alt="Home">
+				</a>
+				<a id="menu" href="./menu.html" style="text-decoration:none">MENU</a>
+				<a id="ourstory" href="javascript:;" style="text-decoration:none">OUR STORY</a>
+				<a id="contact" href="javascript:;" style="text-decoration:none">CONTACT</a>
+				<a id="signin" href="javascript:;" style="text-decoration:none">SIGN IN</a>
+				<a id="cartempty" href="./shoppingcart.html">
+					<img src="images/shoppingcart-emptylogo.png" alt="Cart">
+				</a>
+			</div>
+					<!--STARTS HERE
+
+					-->
+			<div class= "fullpage">
+				<div id="blackberryimage">
+					<img src="./images/blackberrybun.png">
+				</div>
+				<div class= "items">
+<table cellpadding="4" cellspacing="4" border="0">
+    <tr>
+        <td valign="top">
+            <table cellpadding="4" cellspacing="4" border="0">
+                <thead>
+                    <tr>
+                        <td colspan="4">
+                            <p id="tabletitle">OUR FAMOUS BUNS</p>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="blackberrystuff">
+                        <td id="firstitemname">
+                            BLACKBERRY
+                        </td>
+                        <td>
+                        		<form class="add-to-cart-glazing" action="carttest.html" method="post">
+							<div class="glazingdrop">
+	  							<label for="glazing">Glazing</label>
+	 	 						<select class="glazing" id="blackberryglazing" name="glazing">
+	  								<option value="-">-</option>
+	  								<option value="None">None</option>
+	  								<option value="Sugar-Milk">  Sugar-Milk</option>
+	  								<option value="Vanilla-Milk">  Vanilla-Milk</option>
+	  								<option value="Double-Chocolate">  Double-Chocolate</option>
+	  							</select>
+	  						</div>
+	 					</form>
+	 					</td>
+	 					                        <td>
+                        	<form class="add-to-cart-quantitys" action="carttest.html" method="post">
+		 					<div class="quantitydrop">
+		  						<label for="quantity">Quantity</label>
+		  						<select id="blackberryquantity" class="quantity" onchange="changeBlackberryTotal()">
+								  <option value="0">-</option>
+								  <option value="1.99">1 ($1.99)</option>
+								  <option value="4.99">3 ($4.99)</option>
+								  <option value="8.99">6 ($8.99)</option>
+								  <option value="14.99">12 ($14.99)</option>
+								</select>	  				
+		 					</div>
+		 					</form>
+                        </td>
+                        <td>
+                            <input type="button" value="Add to cart" onclick="AddtoCart('Blackberry','glazing', 'quantity', 'price')"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            CARAMEL PECAN
+                        </td>
+                        <td>
+                            <input type="button" value="Add to cart" onclick="AddtoCart('Door','Yellow Door',150)"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            ORIGINAL
+                        </td>
+                        <td>
+                            <input type="button" value="Add to cart" onclick="AddtoCart('Ferrari','Ferrari S234',150000)"/>
+                        </td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </td>
+        <td valign="top">
+            <table cellpadding="4" cellspacing="4" border="1" id="orderedProductsTbl">
+                <thead>
+                    <tr>
+                        <td>
+                            Name
+                        </td>
+                        <td>
+                            Glazing
+                        </td>
+                        <td>
+                        	Quantity
+                        </td>
+                        <td>
+                            Price
+                        </td>
+                    </tr>
+                </thead>
+                <tbody id="orderedProductsTblBody">
+
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4" align="right" id="cart_total">
+
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </td>
+    </tr>
+</table>
+</div>
+</div>
+</div>
+				<!--<div class= "items">
+					<div id='mycart'>
+						<p><b>MY CART</b></p>
+					</div>
+					<div id= "itemcount">
+						<p>(1 Item)</p>
+					</div>
+					<div id="continueshopping">
+						<a id="continue" href="./menu.html"><u>Continue Shopping</u></a>
+					</div>
+					<div id="line">
+						<img src = "images/line.png" alt="line">
+					</div>
+					<div class="product">
+						<div id="productimage">
+							<img src="images/blackberrybunonly.png" alt="blackberrybun">
+						</div>
+						<div id="cancel">
+							<a id="cancel" href="#cancel" style="text-decoration:none">X</a>
+						</div>
+						<div id="price">
+							<p>$14.99</p>
+						</div>
+						<div id="bunname">
+							<p>Blackberry Cinnamon Buns</p>
+						</div>
+						<p id="summaryglazing">Glazing: Sugar-Milk</p>
+						<p id= "summaryquantity">Quantity: 12</p>
+					</div>
+					<p id="subtotal"><b>SUBTOTAL</b></p>
+					<p id="subtotalcost"><b>$14.99</b></p>
+			</div>
+			<div class= "shoppingtotal">
+				<p id="shoppingtotal"><b>TOTAL</b></p>
+				<p id="totalcost"><b>$19.61</b></p>
+				<div id="shortline">
+					<img src = "images/line.png" alt="line">
+				</div>
+				<p id="labels"><b>Subtotal<br><br><br>
+					Delivery<br><br><br>
+					Tax</b></p>
+				<p id="costs">$14.99<br><br><br>
+					$2.99<br><br><br>
+				$1.63</p>
+				<div id="bottomline">
+					<img src = "images/line.png" alt="line">
+				</div>
+				<a id= "checkoutbutton" href="#checkoutbutton">
+					<div class="proceedbutton">
+					<p id="checkout"><b>PROCEED TO CHECKOUT</b></p>
+				</div></a>
+			</div>-->
+			<div class=bottomfooter>
+				<img src="images/bunbunlogo.png" alt="Home">
+				<div class="footer">1234 Best Buns Street, Pittsburgh PA, 15213<br>Email: bunbuns@bunmail.com  l  Phone: (412)-BUN-BUNS</div> 
+			</div>
+		</div>
+		<script src="myscripts.js"></script>	
+	</body>	
+</html>

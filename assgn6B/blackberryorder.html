@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Bun Bun's Bake Shop Home</title>
+		<!-- styles-->
+		<link rel="stylesheet" type="text/css" href="stylebunbun.css">
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<div class= "pagecontainer">
+			<div class="navbar">
+				<a class="active" id="homelogo" href="./index.html">
+					<img src="images/bunbunlogo.png" alt="Home">
+				</a>
+				<a id="menu" href="./menu.html" style="text-decoration:none"><b>MENU</b></a>
+				<a id="ourstory" href="javascript:;" style="text-decoration:none">OUR STORY</a>
+				<a id="contact" href="javascript:;" style="text-decoration:none">CONTACT</a>
+				<a id="signin" href="javascript:;" style="text-decoration:none">SIGN IN</a>
+				<a id="cartempty" href="./shoppingcart.html">
+					<img src="images/shoppingcart-emptylogo.png" alt="Cart">
+				</a>
+				<input type="text" id="inc" value="0"></input>
+			</div>
+			<div class= "menu">
+				<div class="menuorder"></div>
+				<div class="ourfamousbuns"><u>OUR HOMEMADE BUNS</u></div>
+				<div class="star">
+					<img src="images/bluestar.png" alt="star">
+				</div>
+				<div class="customerfavs">CUSTOMER FAVORITES</div>
+				<a id="productdescription" href="./blackberryorder.html">
+					<img src="images/blackberrybun.png" alt="Blackberry"></a>
+				<a id="carameldescription" href="./caramelpecanorder.html">
+					<img src="images/caramelpecanbun.png" alt="Caramel Pecan"></a>
+				<a id="originaldescription" href="./originalorder.html">
+					<img src="images/originalbun.png" alt="Original"></a>
+				<div class="pumpkinspicemenu">
+					<img src="images/PUMKINSPICEbun.png" alt="pumpkin spice bun">
+				</div>
+				<div class="walnut">
+					<img src="images/walnutbun.png" alt="walnut bun">
+				</div>
+				<div class="originalgf">
+					<img src="images/originalgfbun.png" alt="original gluten free bun">
+				</div>
+				<div class="blackberrycustomize">
+					<div class="ordercontainer">
+						<div class= "blackberryalone" id="blackberryimage">
+							<img src="images/blackberrybunonly.png" alt="blackberry bun">
+						</div>
+						<div class="blackberrytitle"><b>BLACKBERRY</b></div>
+						<div class="starblackberry">
+							<img src="images/bluestar.png" alt="star">
+						</div>
+						<div class="blackberrydescription">
+							This fresh, fruity bun is a fan favorite! Every morning,<br>we infuse our <i>freshly kneaded</i> buttery dough with<br>the juiciest local blackberries. Then we bake every <br>bun until it’s <i>golden brown</i>, and top it off with a <br>sweet, glazing of your choosing, at no extra cost!
+						</div>
+						<div class="cancel">
+							<a class="active" href="./menu.html">
+								<img src="images/cancel.png" alt="x">
+							</a>
+						</div>
+						<!--
+						<div class="glazingchoose">
+							<a href="./blueberryorderglazing.html">
+								<img src="glazing customize.png" alt="glazingcustomize">
+							</a>
+						</div>
+						-->
+						<form class="add-to-cart-glazing" action="shoppingcart.html" method="post">
+							<div class="glazingdropdown">
+	  							<label for="glazing">Glazing</label>
+	 	 						<select class="glazing" id="blackberryglazing" name="glazing">
+	  								<option value="-">-</option>
+	  								<option value="None">None</option>
+	  								<option value="Sugar-Milk">  Sugar-Milk</option>
+	  								<option value="Vanilla-Milk">  Vanilla-Milk</option>
+	  								<option value="Double-Chocolate">  Double-Chocolate</option>
+	  							</select>
+	  						</div>
+	 					</form>
+	 					<form class="add-to-cart-quantitys" action="shoppingcart.html" method="post">
+		 					<div class="quantitydropdown">
+		  						<label for="quantity">Quantity</label>
+		  						<select id="blackberryquantity" class="quantity" onchange="changeBlackberryTotal()">
+								  <option value="-">-</option>
+								  <option value="$1.99">1 ($1.99)</option>
+								  <option value="$4.99">3 ($4.99)</option>
+								  <option value="$8.99">6 ($8.99)</option>
+								  <option value="$14.99">12 ($14.99)</option>
+								</select>	  				
+		 					</div>
+		 				</form>
+	 					<div class="addtocart">
+	 						<p id="blackberryaddtocart">
+	 						<button class="itemsubmit" id="submititem" onclick="buttonClick()">ADD TO CART</button>	 					</p>
+						</div>
+						<div class="total">
+							<h2 id="blackberrytotal">TOTAL: -</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="menubottomfooter">
+				<img src="images/bunbunlogo.png" alt="Home">
+				<div class="footer">1234 Best Buns Street, Pittsburgh PA, 15213<br>Email: bunbuns@bunmail.com  l  Phone: (412)-BUN-BUNS</div> 
+			</div>
+		</div>	
+		<script src="myscripts.js"></script>
+	</body>	
+</html>
