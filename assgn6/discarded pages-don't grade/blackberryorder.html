@@ -19,6 +19,7 @@
 				<a id="cartempty" href="./shoppingcart.html">
 					<img src="images/shoppingcart-emptylogo.png" alt="Cart">
 				</a>
+				<input type="text" id="inc" value="0"></input>
 			</div>
 			<div class= "menu">
 				<div class="menuorder"></div>
@@ -91,7 +92,8 @@
 		 					</div>
 		 				</form>
 	 					<div class="addtocart">
-	 						<a id="submititem" href="./menu.html" style="text-decoration:none"><p id="blackberryaddtocart"><input type="submit" onclick="addItem();" value="ADD TO CART" class="itemsubmit" /></p></a>
+	 						<p id="blackberryaddtocart">
+	 						<button class="itemsubmit" id="submititem" onclick="buttonClick()">ADD TO CART</button>	 					</p>
 						</div>
 						<div class="total">
 							<h2 id="blackberrytotal">TOTAL: -</h2>

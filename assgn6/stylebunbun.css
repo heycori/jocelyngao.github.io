@@ -13,7 +13,7 @@ html {
 	background-color: #fff;
 	position: fixed;
 	top: 0;
-	height: 100px;
+	height: 110px;
 	width: 100%;
 	z-index: 100;
 	border-bottom-color: #C4C4C4;
@@ -33,9 +33,17 @@ html {
 	font-family: "Avenir LT Std";
 }
 
-.navbar img {
+#cartBtn {
+	color: none;
+	background-color: transparent;
+	border: none;
+}
+
+.navbar #shoppingcartlogo {
+	position:absolute
 	height: 85%;
 	width:85%;
+	margin-top: 30px;
 }
 
 .container {
@@ -128,7 +136,7 @@ html {
 	font-size: 20px;
 }
 
-.original {
+#menuoriginal {
 	width:300px;
 	height: 400px;
 	position:absolute;
@@ -136,12 +144,35 @@ html {
 	margin-top:135px;
 }
 
-.blackberry {
+#menublackberry {
 	width:300px;
 	height: 400px;
 	position:absolute;
-	margin-left: 503px;
+	margin-left: 520px;
 	margin-top:135px;
+}
+
+#menupumpkinspice img{
+	width:300px;
+	height: 398px;
+	position:absolute;
+	margin-left: 963px;
+	margin-top:135px;
+}
+
+#myBtn {
+	width:320px;
+	height: 420px;
+	position:absolute;
+	left: 55px;
+	top:135px;
+	border-radius: 5px;
+}
+
+#myBtn img{
+	position: absolute;
+	left: -1px;
+	top: -1px;
 }
 
 .pumpkinspice img{
@@ -311,22 +342,24 @@ body {
 
 .blackberryalone img{
 	position:absolute;
-	left:25px;
-	top:30px;
+	left:280px;
+	top:170px;
+	width: 247.7px;
+	height: 270px;
 }
 
 .originalbunonly img{
 	position:absolute;
 	left:25px;
 	top:30px;
-	width: 346.47px;
-	height: 377.79px;
+	width: 183.5px;
+	height: 200px;
 }
 
 .blackberrytitle {
 	position: absolute;
-	top: 35px;
-	left: 420px;
+	top: 170px;
+	left: 590px;
 	font-size: 25px;
 	color: #001331;
 }
@@ -341,16 +374,17 @@ body {
 
 .starblackberry {
 	position:absolute;
-	top: 35px;
-	left: 385px;
+	top: 170px;
+	left: 550px;
 }
 
 .blackberrydescription {
 	color: black;
 	font-size: 16px;
 	line-height: 180%;
-	margin-left:390px;
+	margin-left:290px;
 	margin-top:80px;
+	margin-right: 20px;
 }
 
 .cancel {
@@ -366,8 +400,8 @@ body {
 
 .glazingdropdown {
 	position:absolute;
-	top: 250px;
-	left: 390px;
+	top: 370px;
+	left: 560px;
 	background-color: #001B48;
 	color: white;
 	padding: 7px;
@@ -382,8 +416,8 @@ body {
 
 .quantitydropdown {
 	position:absolute;
-	top: 250px;
-	left:610px;
+	top: 370px;
+	left:800px;
 	background-color: #001B48;
 	color: white;
 	padding: 7px;
@@ -467,7 +501,7 @@ body {
 #inc {
 	position: absolute;
 	top: 20px;
-	left: 1260px;
+	left: 1210px;
 	width: 15px;
 	height: 20px;
 	border: 0px;
@@ -477,27 +511,36 @@ body {
 	padding-left: 5px;
 }
 
-.addtocart button{
+#cartempty {
+	position:absolute;
+	top: 0px;
+	left: 1085px;
+}
+
+#cartempty img {
+	height: 85%;
+	width: 85%;
+}
+
+.addtocart input{
 	position: absolute;
 	width:170px;
 	height:40px;
-	left: 610px;
-	top: 370px;
+	left: 900px;
+	top: 450px;
 	border-radius: 10px;
 	text-align: center;
 }
 
-.addtocart button {
+.addtocart input {
 	color: white;
 	font-size: 16px;
 }
-.addtocart button {
+.addtocart input {
 	color:white;
 	font-size: 16px;
 	background-color: #001B48;
 	width:170px;
-	height:40px;
-	left: 610px;
 	border-radius: 10px;
 	text-align: center;
 	border: 1px solid #010205;
@@ -507,23 +550,22 @@ body {
 
 .total {
 	position:absolute;
-	top: 353px;
-	left: 395px;
-	font-size: 18px;
+	top: 430px;
+	left: 560px;
+	font-size: 20px;
 }
 
 /*shopping cart stuff*/
 .fullpage {
 	position: absolute;
-	top: 100px;
+	top: 0px;
 	width: 100%;
 	background-color: rgba(120, 159, 223, 0.08);
 	min-height: 800px;
 }
 
 .progressbar {
-	left: 180px;
-	top: 60px;
+	margin: 60px 200px;
 	position: absolute;
 }
 
@@ -542,11 +584,11 @@ body {
 	background-color: white;
 	position: absolute;
 	left: 85px;
-	top:140px;
+	top:150px;
 	border: 1px solid #717178;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-	width: 750px;
-	min-height: 430px;
+	width: 85%;
+	height: xx;
 }
 
 #tabletitle {
@@ -577,9 +619,9 @@ body {
 
 
 #mycart {
-	font-size: 22px;
+	font-size: 30px;
 	padding-left: 60px;
-	padding-top: 20px;
+	padding-top: 5px;
 }
 
 #continueshopping {
@@ -590,13 +632,43 @@ body {
 
 #line {
 	position:absolute;
-	top: 68px;
+	top: 110px;
 	left: 50px;
 	}
 
 #line img{
-	width: 620px;
+	width: 1020px;
+	height: 2px;
 }
+
+
+.cartclose {
+	position: absolute;
+	top: 190px;
+	left: 1040px;
+	z-index: 11;
+}
+
+
+#orderedProductsTbl {
+	position: relative;
+	left: -10px;
+	margin-top:-25px;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-bottom: 50px;
+	font-size: 20px;
+
+}
+
+#orderedProductsTbl thead {
+	font-size: 20px;
+}
+
+#orderedProductsTbl tbody {
+	font-size: 18px;
+}
+
 
 #itemcount p{
 	position:absolute;
@@ -737,19 +809,22 @@ body {
 }
 
 .proceedbutton {
-	position:absolute;
+	position:relative;
 	height: 50px;
-	width: 300px;
-	left: 40px;
+	width: 280px;
+	left: 740px;
 	bottom: 20px;
 	background-color: #233654;
 	border-radius: 3px;
+	text-align: center;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .proceedbutton p{
 	color: white;
-	padding-left: 40px;
-	margin-top: 15px;
+	position: relative;
+	top: -28px;
+	font-size: 20px;
 }
 
 /**empty shopping cart stuff**/
@@ -759,7 +834,7 @@ body {
 	border: 1px solid #717178;
 	box-sizing: border-box;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-	top: 50px;
+	top: 170px;
 	left: 290px;
 	width: 800px;
 	height: 400px;
@@ -818,3 +893,110 @@ body {
 	top: 110px;
 }
 
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 8; /* Sit on top */
+  left: 0;
+  top: 0px;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%; /* Could be more or less, depending on screen size */
+  height: 52%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+
+#cartModal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 8; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+#modal-content-cart {
+  background-color: #fefefe;
+  margin: 0px; /* 15% from the top and centered */
+  padding: 50px;
+  border: 1px solid #888;
+  width: 100%; /* Could be more or less, depending on screen size */
+  height: 100%;
+}
+
+/* The Close Button */
+.cartclose {
+  color: #aaa;
+  float: right;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.cartclose:hover,
+.cartclose:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+#myBtn:hover,
+#myBtn:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#cartBtn:hover,
+#cartBtn:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.addtocart input:hover {
+  color: #789FDF;
+  text-decoration: none;
+  cursor: pointer;
+}
+.addtocart input: focus {
+	transform: translateY(4px);
+}

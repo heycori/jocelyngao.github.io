@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Bun Bun's Bake Shop Home</title>
+		<!-- styles-->
+		<link rel="stylesheet" type="text/css" href="stylebunbun.css">
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<div class= "pagecontainer">
+			<div class="navbar">
+				<a class="active" id="homelogo" href="./index.html">
+					<img src="images/bunbunlogo.png" alt="Home">
+				</a>
+				<a id="menu" href="./testingmenuwithcart.html" style="text-decoration:none"><b>MENU</b></a>
+				<a id="ourstory" href="javascript:;" style="text-decoration:none">OUR STORY</a>
+				<a id="contact" href="javascript:;" style="text-decoration:none">CONTACT</a>
+				<a id="signin" href="javascript:;" style="text-decoration:none">SIGN IN</a>
+				<input type="text" id="inc" value="0"></input>
+				<button id="cartBtn">
+					<img id="shoppingcartlogo" src="images/shoppingcart-emptylogo.png" alt="Cart">
+				</button>
+
+					<!-- The Modal -->
+					<div id="cartModal" class="modal">
+
+					  <!-- Modal content -->
+					  <div id="modal-content-cart">
+					    <span class="cartclose">CONTINUE SHOPPING</span>
+					    <div class= "fullpage">
+							<div class="progressbar">
+								<img src="images/progressbar.png" alt="Progressbar">
+							</div>
+							<div class= "itemscart">
+								<div id='mycart'>
+									<p><b>MY CART</b></p>
+								</div>
+								<div id= "itemcount">
+									<p></p>
+								</div>
+								<div id="line">
+									<img src = "images/line.png" alt="line">
+								</div>
+					
+					    
+						    	 <td valign="top">
+						            <table cellpadding="10" cellspacing="10" border="0" id="orderedProductsTbl" cellwidth="50px">
+						                <thead>
+						                	<tr>
+						                        <td width=35%>
+						                            <b>Bun Flavor</b>
+						                        </td>
+						                        <td width=45%>
+						                            <b>Glazing</b>
+						                        </td>
+						                        <td width=25%>
+						                        	<b>Quantity</b>
+						                        </td>
+						                        <td>
+						                            <b>Price</b>
+						                        </td>
+						                    </tr>
+						                    <tr></tr>
+						                </thead>
+						                <tbody id="orderedProductsTblBody">
+
+						                </tbody>
+						                <tfoot>
+						                	<tr></tr>
+						                	<tr></tr>
+						                    <tr>
+						                    	<td></td>
+						                    	<td></td>
+						                    	<td> <b>SUBTOTAL</b> </td>
+						                        <td colspan="1" align="right" id="cart_total">
+
+						                        </td>
+						                    </tr>
+						                </tfoot>
+						            </table>
+						        </td>
+						    </tr>
+						</table>
+						<a id= "checkoutbutton" href="#checkoutbutton" style="text-decoration:none">
+							<div class="proceedbutton">
+							<p id="checkout"><b>PROCEED TO CHECKOUT</b></p>
+						</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+			</div>
+			<div class= "menu">
+				<div class="ourfamousbuns"><u>OUR HOMEMADE BUNS</u></div>
+				<div class="star">
+					<img src="images/bluestar.png" alt="star">
+				</div>
+				<div class="customerfavs">CUSTOMER FAVORITES</div>
+				<button id="myBtn">
+					<img src="images/blackberrybun.png" alt="Blackberry">
+				</button>
+
+					<!-- The Modal -->
+					<div id="myModal" class="modal">
+
+					  <!-- Modal content -->
+					  <div class="modal-content">
+					    <span class="close">&times;</span>
+					    <div class= "blackberryalone" id="blackberryimage">
+							<img src="images/blackberrybunonly.png" alt="blackberry bun">
+						</div>
+						<div class="blackberrytitle"><b>BLACKBERRY</b></div>
+						<div class="starblackberry">
+							<img src="images/bluestar.png" alt="star">
+						</div>
+						<div class="blackberrydescription">
+							This fresh, fruity bun is a fan favorite! Every morning, we infuse our <i>freshly kneaded</i> buttery dough with the juiciest local blackberries. Then we bake every bun until it’s <i>golden brown</i>, and top it off with a sweet, glazing of your choosing, at no extra cost!
+						</div>
+						<form class="add-to-cart-glazing" action="shoppingcart.html" method="post">
+							<div class="glazingdropdown">
+	  							<label for="glazing">Glazing</label>
+	 	 						<select class="glazing" id="blackberryglazing" name="glazing">
+	  								<option value="-">-</option>
+	  								<option value="None">None</option>
+	  								<option value="Sugar-Milk">  Sugar-Milk</option>
+	  								<option value="Vanilla-Milk">  Vanilla-Milk</option>
+	  								<option value="Double-Chocolate">  Double-Chocolate</option>
+	  							</select>
+	  						</div>
+	 					</form>
+	 					<form class="add-to-cart-quantitys" action="shoppingcart.html" method="post">
+		 					<div class="quantitydropdown">
+		  						<label for="quantity">Quantity</label>
+		  						<select id="blackberryquantity" class="quantity" onchange="changeBlackberryTotal()">
+								  <option value="-">-</option>
+								  <option value="1.99">1 ($1.99)</option>
+								  <option value="4.99">3 ($4.99)</option>
+								  <option value="8.99">6 ($8.99)</option>
+								  <option value="14.99">12 ($14.99)</option>
+								</select>	  				
+		 					</div>
+		 				</form>
+	 					<div class="addtocart">
+	 						<input id="blackberryaddtocart" type="button" value="Add to cart"/>	
+	 					</div>
+						<div class="total">
+							<h2 id="blackberrytotal">TOTAL: -</h2>
+						</div>
+					  </div>
+
+					</div>
+
+				
+				<div id="carameldescription">
+					<img src="images/caramelpecanbun.png" alt="Caramel Pecan"></div>
+				<div id="originaldescription">
+					<img src="images/originalbun.png" alt="Original"></div>
+				<div class="pumpkinspicemenu">
+					<img src="images/PUMKINSPICEbun.png" alt="pumpkin spice bun">
+				</div>
+				<div class="walnut">
+					<img src="images/walnutbun.png" alt="walnut bun">
+				</div>
+				<div class="originalgf">
+					<img src="images/originalgfbun.png" alt="original gluten free bun">
+				</div>
+				
+       
+			</div>
+			<div class="menubottomfooter">
+				<img src="images/bunbunlogo.png" alt="Home">
+				<div class="footer">1234 Best Buns Street, Pittsburgh PA, 15213<br>Email: bunbuns@bunmail.com  l  Phone: (412)-BUN-BUNS</div> 
+			</div>
+		</div>
+		<script src="myscripts.js"></script>
+	</body>	
+</html>

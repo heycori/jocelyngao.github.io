@@ -1,16 +1,16 @@
 function changeBlackberryTotal() {
   var blackberryQuantity = document.getElementById("blackberryquantity").value;
-  document.getElementById("blackberrytotal").innerHTML = "TOTAL: " + blackberryQuantity;
+  document.getElementById("blackberrytotal").innerHTML = "TOTAL: $" + blackberryQuantity;
 }
 
 function changeCaramelTotal() {
   var caramelQuantity = document.getElementById("caramelquantity").value;
-  document.getElementById("carameltotal").innerHTML = "TOTAL: " + caramelQuantity;
+  document.getElementById("carameltotal").innerHTML = "TOTAL: $" + caramelQuantity;
 }
 
 function changeOriginalTotal() {
   var originalQuantity = document.getElementById("originalquantity").value;
-  document.getElementById("originaltotal").innerHTML = "TOTAL: " + originalQuantity;
+  document.getElementById("originaltotal").innerHTML = "TOTAL: $" + originalQuantity;
 }
 
 
@@ -93,3 +93,71 @@ function buttonClick() {
        displayShoppingCart();
 
     } 
+
+
+
+
+    var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+
+
+    var cartModal = document.getElementById("cartModal");
+
+// Get the button that opens the modal
+var cartbtn = document.getElementById("cartBtn");
+
+// Get the <span> element that closes the modal
+var cartspan = document.getElementsByClassName("cartclose")[0];
+
+// When the user clicks on the button, open the modal
+cartbtn.onclick = function() {
+  cartModal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+cartspan.onclick = function() {
+  cartModal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == cartModal) {
+    cartModal.style.display = "none";
+  }
+}
+
+var addtocartbtn = document.getElementById("blackberryaddtocart");
+
+addtocartbtn.onclick = function(){
+  AddtoCart('Blackberry','glazing', 'quantity', 'price');
+  myModal.style.display = "none";
+  countitems();
+}
+
+
+function countitems(){  
+  document.getElementById('inc').value=shoppingCart.length;
+  }

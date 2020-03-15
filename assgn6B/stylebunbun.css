@@ -477,7 +477,7 @@ body {
 	padding-left: 5px;
 }
 
-.addtocart button{
+.addtocart input{
 	position: absolute;
 	width:170px;
 	height:40px;
@@ -487,11 +487,11 @@ body {
 	text-align: center;
 }
 
-.addtocart button {
+.addtocart input{
 	color: white;
 	font-size: 16px;
 }
-.addtocart button {
+.addtocart input {
 	color:white;
 	font-size: 16px;
 	background-color: #001B48;
