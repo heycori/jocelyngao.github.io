@@ -1,16 +1,16 @@
 function changeBlackberryTotal() {
   var blackberryQuantity = document.getElementById("blackberryquantity").value;
-  document.getElementById("blackberrytotal").innerHTML = "TOTAL: " + blackberryQuantity;
+  document.getElementById("blackberrytotal").innerHTML = "TOTAL: $" + blackberryQuantity;
 }
 
 function changeCaramelTotal() {
   var caramelQuantity = document.getElementById("caramelquantity").value;
-  document.getElementById("carameltotal").innerHTML = "TOTAL: " + caramelQuantity;
+  document.getElementById("carameltotal").innerHTML = "TOTAL: $" + caramelQuantity;
 }
 
 function changeOriginalTotal() {
   var originalQuantity = document.getElementById("originalquantity").value;
-  document.getElementById("originaltotal").innerHTML = "TOTAL: " + originalQuantity;
+  document.getElementById("originaltotal").innerHTML = "TOTAL: $" + originalQuantity;
 }
 
 
@@ -47,7 +47,6 @@ function buttonClick() {
 	document.getElementById('inc').value= ++i;
 }
 
-/*
  var shoppingCart = [];
 
     //this function manipulates DOM and displays content of our shopping cart
@@ -93,74 +92,72 @@ function buttonClick() {
        //call display function to show on screen
        displayShoppingCart();
 
-    }
-*/
+    } 
 
 
 
-    var shoppingCart = [];
- 
-    
-    
 
-function displayShoppingCart(){
-    
-    var orderedProductsTblBody=document.getElementById("orderedProductsTblBody");
+    var modal = document.getElementById("myModal");
 
-    for(var product in shoppingCart){
-            var cart_total_price=0;
-            //add new row      
-            var row=orderedProductsTblBody.insertRow();
-            //create three cells for product properties 
-            var cellName = row.insertCell(0);
-            var cellGlazing = row.insertCell(1);
-            var cellQuantity= row.insertCell(2);
-            var cellPrice = row.insertCell(3);
-            cellPrice.align="right";
-            //fill cells with values from current product object of our array
-            cellName.innerHTML = shoppingCart[product].Name;
-            cellGlazing.innerHTML = shoppingCart[product].Glazing;
-            cellQuantity.innerHTML = shoppingCart[product].Quantity;
-            cellPrice.innerHTML = shoppingCart[product].Price;
-            cart_total_price+=shoppingCart[product].Price;
-        }
-        //fill total cost of our shopping cart 
-        document.getElementById("cart_total").innerHTML=cart_total_price;
-    }
-     function AddtoCart(name,glazing,quantity,price){
-       SaveGlazingAndQtyAndPrice();
-       //Below we create JavaScript Object that will hold three properties you have mentioned:    Name,Description and Price
-       
-       var singleProduct = {};
-       //Fill the product object with data
-       singleProduct.Name=window.localStorage.getItem('Name');
-       singleProduct.Glazing=JSON.parse(window.localStorage.getItem('Glazing'));
-       singleProduct.Quantity=JSON.parse(window.localStorage.getItem('Quantity'));
-       singleProduct.Price=JSON.parse(window.localStorage.getItem('Price'));
-       //Add newly created product to our shopping cart 
-       shoppingCart.push(singleProduct);
-       //call display function to show on screen
-       displayShoppingCart();
-    }
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
 
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
 
-
-function SaveGlazingAndQtyAndPrice(){
-    var "e"= document.getElementById('blackberryglazing');
-    window.localStorage.setItem("Glazing", JSON.stringify(e.options[e.selectedIndex].value));
-
-    var "quantity"= document.getElementById('blackberryquantity').options[document.getElementById('blackberryquantity').selectedIndex].text;
-    window.localStorage.setItem("Quantity", JSON.stringify(document.getElementById('blackberryquantity').options[document.getElementById('blackberryquantity').selectedIndex].text));
-
-    var "price"= Number(document.getElementById("blackberryquantity").value);
-    window.localStorage.setItem("Price",JSON.stringify(Number(document.getElementById("blackberryquantity").value)));
-
-    window.localStorage.setItem("Name","BLACKBERRY BUN");
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
 }
 
-function GetGlazingAndQtyAndPrice(){
-    var "Glazing" = JSON.parse(window.localStorage.getItem('Glazing'));
-    var "Quantity" = JSON.parse(window.localStorage.getItem('Quantity'));
-    var "Price"= JSON.parse(window.localStorage.getItem('Price'));
-    var "Name"= window.localStorage.getItem('Name');
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
 }
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+
+
+    var cartModal = document.getElementById("cartModal");
+
+// Get the button that opens the modal
+var cartbtn = document.getElementById("cartBtn");
+
+// Get the <span> element that closes the modal
+var cartspan = document.getElementsByClassName("cartclose")[0];
+
+// When the user clicks on the button, open the modal
+cartbtn.onclick = function() {
+  cartModal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+cartspan.onclick = function() {
+  cartModal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == cartModal) {
+    cartModal.style.display = "none";
+  }
+}
+
+var addtocartbtn = document.getElementById("blackberryaddtocart");
+
+addtocartbtn.onclick = function(){
+  AddtoCart('Blackberry','glazing', 'quantity', 'price');
+  myModal.style.display = "none";
+  countitems();
+}
+
+
+function countitems(){  
+  document.getElementById('inc').value=shoppingCart.length;
+  }

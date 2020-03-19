@@ -19,7 +19,6 @@
 				<a id="cartempty" href="./shoppingcart.html">
 					<img src="images/shoppingcart-emptylogo.png" alt="Cart">
 				</a>
-				<input type="text" id="inc" value="0"></input>
 			</div>
 			<div class= "menu">
 				<div class="menuorder"></div>
@@ -90,10 +89,10 @@
 								  <option value="$14.99">12 ($14.99)</option>
 								</select>	  				
 		 					</div>
-		 					<div class="addtocart">
-		 						<input type="submit" value="ADD TO CART" onclick="AddtoCart('Blackberry','glazing', 'quantity', 'price')"/>
-		 					</div>
 		 				</form>
+	 					<div class="addtocart">
+	 						<a id="submititem" href="./menu.html" style="text-decoration:none"><p id="blackberryaddtocart"><input type="submit" onclick="addItem();" value="ADD TO CART" class="itemsubmit" /></p></a>
+						</div>
 						<div class="total">
 							<h2 id="blackberrytotal">TOTAL: -</h2>
 						</div>
