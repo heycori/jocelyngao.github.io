@@ -72,7 +72,7 @@ function buttonClick() {
             cellPrice.innerHTML = shoppingCart[product].Price;
             cart_total_price+=shoppingCart[product].Price;
             remove.innerHTML = shoppingCart[product].Remove;
-        }
+        } 
         //total cost of shopping cart 
         document.getElementById("cart_total").innerHTML=cart_total_price;
     }
@@ -171,7 +171,30 @@ addtocartbtn.onclick = function(){
   document.getElementById('inc').value=shoppingCart.length;
   }*/
 
+function countitems() {
+  var items = 0;
+    for (var i = 0; i<shoppingCart.length; i++) {
+      if (shoppingCart[i].Quantity == "-"){
+        items = items + 0;
+      }
+      if (shoppingCart[i].Quantity== "1 ($1.99)") {
+        items = items + 1;
+      }
+      if (shoppingCart[i].Quantity== "3 ($4.99)") {
+        items = items + 3;
+      }
+      if (shoppingCart[i].Quantity== "6 ($8.99)") {
+        items = items + 6;
+      }
+      if (shoppingCart[i].Quantity== "12 ($14.99)") {
+        items = items + 12;
+      }
+    }
+    document.getElementById('inc').value = items;
+  }
 
+
+/*
 function countitems() {
   var totalRowCount = 0;
   var rowCount = 0;
@@ -188,7 +211,7 @@ function countitems() {
 
 
 
-/*
+
 function removeItem(){
   var td = event.target.parentNode;
   var tr = td.parentNode;
@@ -208,6 +231,6 @@ function getIndex (element){
   var product = tr.parentNode;
   tr.parentNode.removeChild(tr);
   product.parentNode.removeChild(product);
-  
+
   displayShoppingCart();
 }
