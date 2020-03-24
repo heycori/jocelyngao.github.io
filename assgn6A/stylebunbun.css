@@ -508,9 +508,7 @@ body {
 	border-radius: 10px;
 	background-color: #38537D;
 	color: white;
-	text-align: center;
-	padding: 2px;
-	font-size: 12px;
+	padding-left: 5px;
 }
 
 #cartempty {

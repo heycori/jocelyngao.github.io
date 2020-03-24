@@ -1,0 +1,3 @@
+The new features on my page can be experienced on the blackberry product details page:
+  Both dropdowns are interactable, and depending on what quantity the user chooses, the total cost at the bottom will update with the correct price.
+  Once a user hits the "add to cart button," what the user actually selected for the glazing and quantity is accurately recorded and accessible in the shopping cart page. Also, the counter by the shopping cart icon in the navigation bar accurately counts the number of orders they have made and are currently in their cart. Additionally on the shopping cart page, the user can continue shopping by clicking the link that says "continue shopping."
