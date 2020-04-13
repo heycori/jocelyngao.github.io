@@ -1,0 +1,52 @@
+#welcome h1, h3{
+	color:white;
+}
+
+
+.welcomesection {
+	align-content: center;
+	}
+
+#welcome {
+	position: relative;
+	text-align: center;
+	padding: 20% 5%;
+}
+
+
+.tab {
+	display: inline-block;
+	margin-left: 40px;
+}
+
+
+#logo {
+	height:30px ;
+	width: 67px;
+}
+
+.aboutme{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#buffalo {
+	position: relative;
+	text-align: center;
+	padding: 18% 5%;
+}
+
+.myworksection {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#contactme{
+	background-color: #8CA0B7;
+	position: relative;
+}
+
+.space {
+	display: inline-block;
+	margin-left: 4px;
+}
