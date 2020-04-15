@@ -4,6 +4,7 @@
   <title>Jocelyn Gao's Portfolio</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
   <link rel="stylesheet" type="text/css" href="mystyle.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -23,10 +24,10 @@
     }
   </style>
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="200" style="font-family:Lato;">
 
 <div class=welcomesection>
-	<div class="jumbotron" style="background-image: url(./images/backgroundimageone.png); background-size:105% auto; padding: 0px; margin: 0px; background-repeat: no-repeat; overflow: hidden;">
+	<div class="jumbotron" style="background-image: url(./images/index/backgroundimageone.png); background-size:105% auto; padding: 0px; margin: 0px; background-repeat: no-repeat; overflow: hidden;">
 
 	<nav class="navbar navbar-inverse navbar-fixed-top">
 	<div class="container-fluid">
@@ -36,7 +37,7 @@
 	      <span class="icon-bar"></span>
 	      <span class="icon-bar"></span>                        
 	    </button>
-	    <a class="navbar-brand" href="./index.html"><img id=logo src = ./images/logo.png></a>
+	    <a class="navbar-brand" href="./index.html"><img id=logo src = ./images/index/logo.png></a>
 	  </div>
 	  <div class="collapse navbar-collapse" id="myNavbar">
 	    <ul class="nav navbar-nav navbar-right">
@@ -50,18 +51,19 @@
 
 	  <div class="d-flex align-items-center" id="welcome">
 	   		<h1>WELCOME TO MY PORTFOLIO</h1>      
-	 		<h3 class="hidden-xs bg-info" style="background-color: transparent; color: white;">JOCELYN GAO  <span class=tab></span>    USER EXPERIENCE DESIGNER</h3>
+	 		<h3 class="hidden-xs bg-info" style="background-color: transparent; color: white;">JOCELYN GAO  <span class=tab></span>    USER EXPERIENCE DESIGNER</h3><br>
+	 		<a href="#aboutme"><img src="./images/index/downcarrot.png"></a>
+	 		<span id="aboutme"><a name="aboutme"></a></span>
 	 	</div>
 	</div>
 </div>
 
-<a name="aboutme"></a>
-<div class="aboutme">
+<div id="aboutmesection">
 	<div class="container-fluid bg-3 text-left">
 		<div class="row">
 			<div class="col-sm-1"></div>
 			<div class="col-sm-3">
-				<img src=./images/aboutme.png class="img-responsive">
+				<img src=./images/index/aboutme.png class="img-responsive">
 			</div>
 			<div class="col-sm-6">
 				<h4> <u><b>ABOUT ME</b></u></h4>
@@ -83,29 +85,31 @@
 </div>
 
 <div class=buffalosection>
-	<div class="jumbotron" style="background-image: url(./images/backgroundimagetwo.png); background-size:105% auto; padding: 0px; margin: 0px; background-repeat: no-repeat; overflow: hidden; align-content: center;">
+	<div class="jumbotron" style="background-image: url(./images/index/backgroundimagetwo.png); background-size:105% auto; padding: 0px; margin: 0px; background-repeat: no-repeat; overflow: hidden; align-content: center;">
 		<div class="d-flex align-items-center">
 			<h1 id = "buffalo" style="color: white;"> BUFFALO, NEW YORK</h1>
 		</div>
 	</div>
 </div>
 
-<a name="mywork"></a>
+<span id="mywork"><a name="mywork"></a></span>
   <div class="myworksection" style="position: relative; padding: 0px 60px;">
 		<div class="container-fluid bg-3 text-center">    
 		  <h2><b><u>MY WORK</u></b></h2><br>
 		  <div class="row">
 		    <div class="col-sm-4">
-		      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-		      <p>Some text..</p>
+		      <a href="ath.html" style="color: black;"> <img src="./images/index/ATHcover.png" class="img-responsive" style="width:100%;" alt="Image">
+		      <h4><b>Atlantis Transit Hub</b></h4>
+		      <p>Data Driven Environmental Display</p> </a>
 		    </div>
 		    <div class="col-sm-4">
-		      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-		      <p>Some text..</p>
+		      <a href="ATMredesign.html" style="color: black;"><img src="./images/index/ATMcover.png" class="img-responsive" style="width:100%;" alt="Image">
+		      <h4><b>ATM Redesign</b></h4>
+		      <p> Physical Prototype</p></a>
 		    </div>
 		    <div class="col-sm-4">
-		      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-		      <p>Some text..</p>
+		      <a href="#" style="color: black;"><img src="./images/index/EMScover.png" class="img-responsive" style="width:100%;" alt="Image">
+		      <h4><b>EMR Redesign</b></h4></a>
 		    </div>
 		   </div>
 		</div><br><br>
@@ -113,26 +117,30 @@
 		<div class="container-fluid bg-3 text-center">    
 		  <div class="row">
 		    <div class="col-sm-4">
-		      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-		      <p>Some text..</p>
+		      <a href="#" style="color: black;"><img src="./images/index/micrositecover.png" class="img-responsive" style="width:100%;" alt="Image">
+		      <h4><b>Microsite UI Prototype</b></h4></a>
 		    </div>
 		    <div class="col-sm-4">
-		      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-		      <p>Some text..</p>
+		      <a href="#" style="color: black;"><img src="./images/index/EMRcover.png" class="img-responsive" style="width:100%;" alt="Image">
+		      <h4><b>Responsive Web Design</b></h4>
+		      <p> Emergency Response </p></a>
 		    </div>
 		    <div class="col-sm-4">
-		      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-		      <p>Some text..</p>
+		      <a href="#" style="color: black;"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%;" alt="Image">
+		      <p>Some text..</p></a>
 		    </div>
 		   </div>
 		</div><br>
 	</div>
 
-<a name="contactme"></a>
+<a style="position:relative; top: -100px;" name="contactme"></a>
 <footer class="container-fluid text-center" id="contactme">
   <div class="row" style="margin-top: 10px;">
   	<div class="col-sm-6" style="align-content: right; text-align: right;" >
-  		<img src="./images/logo.png" style=" margin-top: 15px; height: 70px;">
+  		<img class="hidden-xs bg-info" src="./images/index/logo.png" style=" margin-top: 15px; height: 70px; background-color: #8CA0B7">
+  	</div>
+  	<div class="col-sm-6" style="text-align: center;" >
+  		<img class="visible-xs bg-info" src="./images/index/logo.png" style=" margin-top: 15px; height: 70px; background-color: #8CA0B7">
   	</div>
   	<div class="col-sm-6" style="align-content: left; text-align: left;">
   		<h5 style="display: inline-block; text-align: left; color: white; line-height: 24px;">PHONE: (716) 545 3272<br>
